@@ -1,5 +1,5 @@
 # budget-database
-TRANSACT-SQL database for tracking budget
+A TRANSACT-SQL database.  Manipulate figures from your personal budget to plot future budget snapshots, see monthly bills and expenses and more.
 
 # Instructions
 To build database and assorted views and procedures, download the files and execute in this order:
