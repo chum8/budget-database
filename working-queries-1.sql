@@ -1,9 +1,10 @@
-﻿--SELECT * FROM Budget.IncomeExpenseList
---	ORDER BY Date
-
---SELECT * FROM Budget.IncomeExpenseMonthlySummary
---	ORDER BY Month
-
+﻿/*SELECT * FROM Budget.IncomeExpenseList
+	ORDER BY Date
+*/
+/*
+SELECT * FROM Budget.IncomeExpenseMonthlySummary
+	ORDER BY Month
+*/
 --EXEC Budget.IncomeTotals 1, 2
 
 --EXEC Budget.MonthlyReport
@@ -21,9 +22,10 @@ SELECT MONTH(C.Date) [Month], SUM(I.Amount) [Income] FROM Budget.Items AS I
 GROUP BY MONTH(C.Date)
 ORDER BY MONTH(C.Date)
 */
-
+/*
 SELECT I.Title [Description], I.Amount [Expense] FROM Budget.Items AS I
 	INNER JOIN Budget.Debits AS D
 		ON I.ItemId = D.ItemId
 WHERE MONTH(D.Date) = 3
+*/
 
